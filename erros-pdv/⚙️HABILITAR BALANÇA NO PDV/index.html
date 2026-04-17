@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentação do sistema PDV">
       
+      
+        <meta name="author" content="Tiago Millos">
+      
+      
+        <link rel="canonical" href="https://tiagomillos.github.io/pdv-docs/erros-pdv/%E2%9A%99%EF%B8%8FHABILITAR%20BALAN%C3%87A%20NO%20PDV/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.2.5">
@@ -53,7 +59,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber">
   
     
     
@@ -109,7 +115,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
           
         
       </form>
@@ -171,7 +177,7 @@
 
   <li class="md-tabs__item">
     <a href="../.." class="md-tabs__link">
-      Welcome to MkDocs
+      📚 Documentação PDV
     </a>
   </li>
 
@@ -235,7 +241,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Welcome to MkDocs
+        📚 Documentação PDV
       </a>
     </li>
   
@@ -1087,8 +1093,8 @@
                 
 
 
-<h1 id="configuracao-de-balanca-toledo-usb-no-pdv">🧾 Configuração de Balança Toledo USB no PDV</h1>
-<h2 id="identificacao-do-dispositivo">📌 Identificação do dispositivo</h2>
+<h1 id="configuracao-de-balanca-toledo-usb-no-pdv">🧾 Configuração de Balança Toledo USB no PDV<a class="headerlink" href="#configuracao-de-balanca-toledo-usb-no-pdv" title="Permanent link">&para;</a></h1>
+<h2 id="identificacao-do-dispositivo">📌 Identificação do dispositivo<a class="headerlink" href="#identificacao-do-dispositivo" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Vendor ID e Product ID da balança:</li>
 </ul>
@@ -1098,22 +1104,22 @@
 </ul>
 <p>usb-TOLEDO_CDC_DEVICE_0123456789-if00</p>
 <hr />
-<h2 id="1-verificar-porta-da-balanca">🔍 1️⃣ Verificar porta da balança</h2>
+<h2 id="1-verificar-porta-da-balanca">🔍 1️⃣ Verificar porta da balança<a class="headerlink" href="#1-verificar-porta-da-balanca" title="Permanent link">&para;</a></h2>
 <p>Listar dispositivos seriais por ID:</p>
 <p>ls -all /dev/serial/by-id/</p>
-<h3 id="exemplo-de-saida">📄 Exemplo de saída:</h3>
+<h3 id="exemplo-de-saida">📄 Exemplo de saída:<a class="headerlink" href="#exemplo-de-saida" title="Permanent link">&para;</a></h3>
 <p>usb-TOLEDO_CDC_DEVICE_0123456789-if00 -&gt; ../../ttyACM2</p>
 <blockquote>
 <p>💡 Isso indica que a balança está usando a porta <code>ttyACM2</code></p>
 </blockquote>
 <hr />
-<h2 id="2-confirmar-via-usb-lsusb">🔍 2️⃣ Confirmar via USB (lsusb)</h2>
+<h2 id="2-confirmar-via-usb-lsusb">🔍 2️⃣ Confirmar via USB (lsusb)<a class="headerlink" href="#2-confirmar-via-usb-lsusb" title="Permanent link">&para;</a></h2>
 <p>Executar:</p>
 <p>lsusb</p>
-<h3 id="exemplo-de-saida_1">📄 Exemplo de saída:</h3>
+<h3 id="exemplo-de-saida_1">📄 Exemplo de saída:<a class="headerlink" href="#exemplo-de-saida_1" title="Permanent link">&para;</a></h3>
 <p>Bus 002 Device 006: ID 1509:2206 First International Computer, Inc.</p>
 <hr />
-<h2 id="3-criar-regra-udev">3️⃣ Criar regra udev</h2>
+<h2 id="3-criar-regra-udev">3️⃣ Criar regra udev<a class="headerlink" href="#3-criar-regra-udev" title="Permanent link">&para;</a></h2>
 <p>Editar o arquivo:</p>
 <p>/etc/udev/rules.d/99-balanca.rules</p>
 <p>Adicionar ao final:</p>
@@ -1123,25 +1129,25 @@ ACTION=="remove", ATTRS{idProduct}=="2206", ATTRS{idVendor}=="1509", SYMLINK-="t
 <p>💡 Isso cria um alias fixo (<code>ttyS2</code>) para a balança</p>
 </blockquote>
 <hr />
-<h2 id="4-ajustar-configuracao-do-grub">⚙️ 4️⃣ Ajustar configuração do GRUB</h2>
+<h2 id="4-ajustar-configuracao-do-grub">⚙️ 4️⃣ Ajustar configuração do GRUB<a class="headerlink" href="#4-ajustar-configuracao-do-grub" title="Permanent link">&para;</a></h2>
 <p>Editar o arquivo:</p>
 <p>/etc/default/grub</p>
 <p>Localizar a variável:</p>
 <p>GRUB_CMDLINE_LINUX_DEFAULT</p>
-<h3 id="alterar">✏️ Alterar:</h3>
+<h3 id="alterar">✏️ Alterar:<a class="headerlink" href="#alterar" title="Permanent link">&para;</a></h3>
 <p><strong>Antes:</strong></p>
 <p>8250.nr_uarts=4</p>
 <p><strong>Depois:</strong></p>
 <p>8250.nr_uarts=2</p>
 <hr />
-<h2 id="5-atualizar-grub">🔄 5️⃣ Atualizar GRUB</h2>
+<h2 id="5-atualizar-grub">🔄 5️⃣ Atualizar GRUB<a class="headerlink" href="#5-atualizar-grub" title="Permanent link">&para;</a></h2>
 <p>Executar:</p>
 <p>update-grub</p>
 <hr />
-<h2 id="6-reiniciar-o-pdv">🔁 6️⃣ Reiniciar o PDV</h2>
+<h2 id="6-reiniciar-o-pdv">🔁 6️⃣ Reiniciar o PDV<a class="headerlink" href="#6-reiniciar-o-pdv" title="Permanent link">&para;</a></h2>
 <p>reboot</p>
 <hr />
-<h2 id="7-configuracao-no-sistema">🧪 7️⃣ Configuração no sistema</h2>
+<h2 id="7-configuracao-no-sistema">🧪 7️⃣ Configuração no sistema<a class="headerlink" href="#7-configuracao-no-sistema" title="Permanent link">&para;</a></h2>
 <p>Após subir o PDV:</p>
 <ul>
 <li>Tipo da balança:</li>
@@ -1155,14 +1161,14 @@ ACTION=="remove", ATTRS{idProduct}=="2206", ATTRS{idVendor}=="1509", SYMLINK-="t
 <p>💡 COM3 corresponde ao <code>ttyS2</code> configurado via udev</p>
 </blockquote>
 <hr />
-<h2 id="resultado-esperado">✅ Resultado esperado</h2>
+<h2 id="resultado-esperado">✅ Resultado esperado<a class="headerlink" href="#resultado-esperado" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Balança reconhecida corretamente</li>
 <li>Comunicação estável com o PDV</li>
 <li>Pesagem funcionando normalmente no sistema</li>
 </ul>
 <hr />
-<h2 id="observacoes">⚠️ Observações</h2>
+<h2 id="observacoes">⚠️ Observações<a class="headerlink" href="#observacoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Sempre validar se o <code>idVendor</code> e <code>idProduct</code> estão corretos (<code>lsusb</code>)</li>
 <li>Caso não funcione:<ul>
@@ -1185,7 +1191,7 @@ ACTION=="remove", ATTRS{idProduct}=="2206", ATTRS{idVendor}=="1509", SYMLINK-="t
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome to MkDocs" rel="prev">
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: 📚 Documentação PDV" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1194,7 +1200,7 @@ ACTION=="remove", ATTRS{idProduct}=="2206", ATTRS{idVendor}=="1509", SYMLINK-="t
               <span class="md-footer__direction">
                 Previous
               </span>
-              Welcome to MkDocs
+              📚 Documentação PDV
             </div>
           </div>
         </a>
@@ -1237,7 +1243,7 @@ ACTION=="remove", ATTRS{idProduct}=="2206", ATTRS{idVendor}=="1509", SYMLINK-="t
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>

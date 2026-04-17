@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentação do sistema PDV">
       
+      
+        <meta name="author" content="Tiago Millos">
+      
+      
+        <link rel="canonical" href="https://tiagomillos.github.io/pdv-docs/erros-pdv/%F0%9F%96%A5%EF%B8%8F%20MONTAGEM%20DO%20ZERO%20SISTEMA/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.2.5">
@@ -53,7 +59,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber">
   
     
     
@@ -109,7 +115,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
           
         
       </form>
@@ -171,7 +177,7 @@
 
   <li class="md-tabs__item">
     <a href="../.." class="md-tabs__link">
-      Welcome to MkDocs
+      📚 Documentação PDV
     </a>
   </li>
 
@@ -235,7 +241,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Welcome to MkDocs
+        📚 Documentação PDV
       </a>
     </li>
   
@@ -1318,121 +1324,121 @@
 <p>__## ⚠️ REGRA OBRIGATÓRIA</p>
 <p><strong>SEMPRE PEDIR TLS ANTES DE TUDO</strong></p>
 <hr />
-<h2 id="objetivo">🧩 Objetivo</h2>
+<h2 id="objetivo">🧩 Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h2>
 <p>Procedimento correto, limpo e seguro para montar um novo PDV, copiando <strong>somente os arquivos essenciais</strong> do PDV antigo, evitando riscos e arquivos indevidos.</p>
 <hr />
-<h2 id="1-acessar-o-diretorio-principal-do-pdv">🔹 1️⃣ Acessar o diretório principal do PDV</h2>
+<h2 id="1-acessar-o-diretorio-principal-do-pdv">🔹 1️⃣ Acessar o diretório principal do PDV<a class="headerlink" href="#1-acessar-o-diretorio-principal-do-pdv" title="Permanent link">&para;</a></h2>
 <p>No novo PDV (destino), abra o terminal e execute:</p>
-<pre><code class="language-bash">cd /Zanthus/Zeus/pdvJava/
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/pdvJava/
+</code></pre></div>
 <hr />
-<h2 id="2-estrutura-padrao-do-comando-scp">🔹 2️⃣ Estrutura padrão do comando SCP</h2>
-<pre><code class="language-bash">scp -r usuario@IP:/caminho/origem/arquivo destino/
-</code></pre>
+<h2 id="2-estrutura-padrao-do-comando-scp">🔹 2️⃣ Estrutura padrão do comando SCP<a class="headerlink" href="#2-estrutura-padrao-do-comando-scp" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>-r<span class="w"> </span>usuario@IP:/caminho/origem/arquivo<span class="w"> </span>destino/
+</code></pre></div>
 <p>Exemplo:</p>
-<pre><code class="language-bash">scp -r root@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9.CFG .
-</code></pre>
+<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>-r<span class="w"> </span>root@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9.CFG<span class="w"> </span>.
+</code></pre></div>
 <p>📌 O ponto (<code>.</code>) indica o diretório atual.</p>
 <hr />
-<h2 id="3-usuario-correto-por-versao-do-pdv">🔹 3️⃣ Usuário correto por versão do PDV</h2>
+<h2 id="3-usuario-correto-por-versao-do-pdv">🔹 3️⃣ Usuário correto por versão do PDV<a class="headerlink" href="#3-usuario-correto-por-versao-do-pdv" title="Permanent link">&para;</a></h2>
 <p>• <strong>PDV RC antigo</strong> → <code>root</code><br />
 • <strong>PDV 1.4 (64 bits)</strong> → <code>user</code><br />
 • <strong>PDV Ubuntu 22</strong> → <code>zanthus</code></p>
 <hr />
-<h2 id="4-copiar-somente-os-arquivos-necessarios-um-por-um">🔹 4️⃣ Copiar somente os arquivos necessários (um por um)</h2>
+<h2 id="4-copiar-somente-os-arquivos-necessarios-um-por-um">🔹 4️⃣ Copiar somente os arquivos necessários (um por um)<a class="headerlink" href="#4-copiar-somente-os-arquivos-necessarios-um-por-um" title="Permanent link">&para;</a></h2>
 <p>⚠️ <strong>Nunca usar curingas amplos</strong> (ex: <code>ECF9*.CFG</code>), pois pode copiar <code>ECF9F.CFG</code> e quebrar configurações.</p>
-<h3 id="exemplos-corretos">📌 Exemplos corretos</h3>
-<pre><code class="language-bash">scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9.CFG .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9A.CFG .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECFRECEB.CFG .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/EMUL.INI .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZIGK.CFG .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/CLISITEF.INI .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/simula* .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/RCBCNF*.CFG .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/RESTG*.CFG .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZMWS*.CFG .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZMAN* .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/CARG*.CFG .
-scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/CLAZ.CFG .
-</code></pre>
+<h3 id="exemplos-corretos">📌 Exemplos corretos<a class="headerlink" href="#exemplos-corretos" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9.CFG<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9A.CFG<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECFRECEB.CFG<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/EMUL.INI<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZIGK.CFG<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CLISITEF.INI<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/simula*<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/RCBCNF*.CFG<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/RESTG*.CFG<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZMWS*.CFG<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZMAN*<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CARG*.CFG<span class="w"> </span>.
+scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CLAZ.CFG<span class="w"> </span>.
+</code></pre></div>
 <hr />
-<h2 id="5-atualizar-codfon-obrigatorio">🔹 5️⃣ ATUALIZAR CODFON (OBRIGATÓRIO)</h2>
+<h2 id="5-atualizar-codfon-obrigatorio">🔹 5️⃣ ATUALIZAR CODFON (OBRIGATÓRIO)<a class="headerlink" href="#5-atualizar-codfon-obrigatorio" title="Permanent link">&para;</a></h2>
 <p>Após copiar o <strong>ZMAN</strong>, atualizar o CODFON:</p>
-<pre><code class="language-bash">tar -xvzf ZMAN_ULTIMA_VERSAO.tar.gz
-</code></pre>
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-xvzf<span class="w"> </span>ZMAN_ULTIMA_VERSAO.tar.gz
+</code></pre></div>
 <p>📌 Sempre utilizar a <strong>última versão</strong> do ZMAN.</p>
 <hr />
-<h1 id="configuracao-da-interface-pdvgui">🖥️🎨 Configuração da Interface (pdvGUI)</h1>
-<h2 id="6-acessar-pasta-pdvgui">🔹 6️⃣ Acessar pasta pdvGUI</h2>
-<pre><code class="language-bash">cd /Zanthus/Zeus/pdvJava/pdvGUI/
-</code></pre>
-<h2 id="7-copiar-guiconfigproj-do-pdv-antigo">🔹 7️⃣ Copiar guiConfigProj do PDV antigo</h2>
-<pre><code class="language-bash">scp -r user@192.168.0.101:/Zanthus/Zeus/pdvJava/pdvGUI/guiConfigProj .
-</code></pre>
+<h1 id="configuracao-da-interface-pdvgui">🖥️🎨 Configuração da Interface (pdvGUI)<a class="headerlink" href="#configuracao-da-interface-pdvgui" title="Permanent link">&para;</a></h1>
+<h2 id="6-acessar-pasta-pdvgui">🔹 6️⃣ Acessar pasta pdvGUI<a class="headerlink" href="#6-acessar-pasta-pdvgui" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/pdvJava/pdvGUI/
+</code></pre></div>
+<h2 id="7-copiar-guiconfigproj-do-pdv-antigo">🔹 7️⃣ Copiar guiConfigProj do PDV antigo<a class="headerlink" href="#7-copiar-guiconfigproj-do-pdv-antigo" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/pdvGUI/guiConfigProj<span class="w"> </span>.
+</code></pre></div>
 <hr />
-<h2 id="8-configuracao-de-resolucao">🔹 8️⃣ Configuração de resolução</h2>
+<h2 id="8-configuracao-de-resolucao">🔹 8️⃣ Configuração de resolução<a class="headerlink" href="#8-configuracao-de-resolucao" title="Permanent link">&para;</a></h2>
 <p>• Acessar o <strong>Painel de Controle</strong> da máquina<br />
 • Alterar a resolução para <strong>800x600</strong><br />
 • Reiniciar a máquina</p>
 <hr />
-<h2 id="9-atualizar-modulo-do-pdv">🔹 9️⃣ Atualizar módulo do PDV</h2>
+<h2 id="9-atualizar-modulo-do-pdv">🔹 9️⃣ Atualizar módulo do PDV<a class="headerlink" href="#9-atualizar-modulo-do-pdv" title="Permanent link">&para;</a></h2>
 <p>Verificar a versão do sistema:</p>
 <p>• <strong>Ubuntu 22</strong> → módulo final <code>8_1</code><br />
 • <strong>Ubuntu 16</strong> → módulo final <code>5_6</code></p>
 <hr />
-<h2 id="10-atualizar-biblioteca-tef">🔹 🔐 10 Atualizar biblioteca TEF</h2>
-<h3 id="pasta-tef112">📁 Pasta TEF112</h3>
+<h2 id="10-atualizar-biblioteca-tef">🔹 🔐 10 Atualizar biblioteca TEF<a class="headerlink" href="#10-atualizar-biblioteca-tef" title="Permanent link">&para;</a></h2>
+<h3 id="pasta-tef112">📁 Pasta TEF112<a class="headerlink" href="#pasta-tef112" title="Permanent link">&para;</a></h3>
 <p>• Verificar se é <strong>32 ou 64 bits</strong><br />
 • Copiar <strong>somente os 4 arquivos <code>.so</code></strong></p>
-<h3 id="via-winscp">📥 Via WinSCP</h3>
+<h3 id="via-winscp">📥 Via WinSCP<a class="headerlink" href="#via-winscp" title="Permanent link">&para;</a></h3>
 <p>• Conectar no IP do PDV<br />
 • Colar os arquivos na <strong>home do usuário</strong></p>
-<h3 id="comandos-no-terminal">⚙️ Comandos no terminal</h3>
-<pre><code class="language-bash">chmod 777 *.so
-cp *.so /Zanthus/Zeus/pdvJava
-</code></pre>
+<h3 id="comandos-no-terminal">⚙️ Comandos no terminal<a class="headerlink" href="#comandos-no-terminal" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>*.so
+cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/pdvJava
+</code></pre></div>
 <p>Ubuntu 16:</p>
-<pre><code class="language-bash">cp *.so /Zanthus/Zeus/lib_u64
-</code></pre>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/lib_u64
+</code></pre></div>
 <p>Ubuntu 22:</p>
-<pre><code class="language-bash">cp *.so /Zanthus/Zeus/lib_u22
-</code></pre>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/lib_u22
+</code></pre></div>
 <hr />
-<h2 id="11-atualizar-todas-as-bibliotecas">🔹 11 Atualizar TODAS as bibliotecas</h2>
-<h3 id="64-bits">🔸 64 bits</h3>
-<pre><code class="language-bash">cd /Zanthus/Zeus/lib_u64
-wget --user pdvtec --password=&quot;I37#P84G0qx@&quot; -c ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_u64/* .
-</code></pre>
-<h3 id="32-bits">🔸 32 bits</h3>
-<pre><code class="language-bash">cd /Zanthus/Zeus/lib_u32
-wget --user pdvtec --password=&quot;I37#P84G0qx@&quot; -c ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so/*
-wget --user pdvtec --password=&quot;I37#P84G0qx@&quot; -c ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_ubu/*
-wget --user pdvtec --password=&quot;I37#P84G0qx@&quot; -c ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_co5/*
-</code></pre>
-<h3 id="ubuntu-22">🔸 Ubuntu 22</h3>
-<pre><code class="language-bash">cd /Zanthus/Zeus/lib_u22
-wget --user pdvtec --password=&quot;I37#P84G0qx@&quot; -c ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_u22/*
-</code></pre>
+<h2 id="11-atualizar-todas-as-bibliotecas">🔹 11 Atualizar TODAS as bibliotecas<a class="headerlink" href="#11-atualizar-todas-as-bibliotecas" title="Permanent link">&para;</a></h2>
+<h3 id="64-bits">🔸 64 bits<a class="headerlink" href="#64-bits" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u64
+wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_u64/*<span class="w"> </span>.
+</code></pre></div>
+<h3 id="32-bits">🔸 32 bits<a class="headerlink" href="#32-bits" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u32
+wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so/*
+wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_ubu/*
+wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_co5/*
+</code></pre></div>
+<h3 id="ubuntu-22">🔸 Ubuntu 22<a class="headerlink" href="#ubuntu-22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u22
+wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_u22/*
+</code></pre></div>
 <hr />
-<h2 id="12-via-manager-obrigatorio">🔹 12 VIA MANAGER (OBRIGATÓRIO)</h2>
+<h2 id="12-via-manager-obrigatorio">🔹 12 VIA MANAGER (OBRIGATÓRIO)<a class="headerlink" href="#12-via-manager-obrigatorio" title="Permanent link">&para;</a></h2>
 <p>• Acessar o <strong>Manager</strong><br />
 • Ir em <strong>Cadastro de PDVs</strong><br />
 • Selecionar a <strong>loja correspondente</strong><br />
 • Informar a <strong>série do PDV</strong><br />
 • Conceder <strong>licença</strong> ao PDV</p>
 <hr />
-<h2 id="13-configuracao-do-pdv-funcoes">⚙️ 13 Configuração do PDV (Funções)</h2>
-<h3 id="licenca">🔑 Licença</h3>
+<h2 id="13-configuracao-do-pdv-funcoes">⚙️ 13 Configuração do PDV (Funções)<a class="headerlink" href="#13-configuracao-do-pdv-funcoes" title="Permanent link">&para;</a></h2>
+<h3 id="licenca">🔑 Licença<a class="headerlink" href="#licenca" title="Permanent link">&para;</a></h3>
 <p>• 6060 – Licença<br />
 • 6066 – Checar licença</p>
-<h3 id="integracoes">🔗 Integrações</h3>
+<h3 id="integracoes">🔗 Integrações<a class="headerlink" href="#integracoes" title="Permanent link">&para;</a></h3>
 <p>• 3801 – Ativar CliSiTef<br />
 • 3401 – Comunicação com Manager<br />
 • 12501 – Ativar FISCTX<br />
 • 6201 – Impressora QRCode<br />
 • 3405 – Ativar carga</p>
-<h3 id="perifericos">🧩 Periféricos</h3>
+<h3 id="perifericos">🧩 Periféricos<a class="headerlink" href="#perifericos" title="Permanent link">&para;</a></h3>
 <p>• 7250 – Config PinPad (tipo 21 / porta 6)<br />
 • 7201 – Salvar PinPad<br />
 • 6450 – Config Scanner (porta 14)<br />
@@ -1440,14 +1446,14 @@ wget --user pdvtec --password=&quot;I37#P84G0qx@&quot; -c ftp://ftp.zanthus.com.
 • 6750 – Config Balança (porta 5)<br />
 • 6751 – Tempo Balança<br />
 • 6701 – Salvar Balança</p>
-<h3 id="fiscal">🧾 Fiscal</h3>
+<h3 id="fiscal">🧾 Fiscal<a class="headerlink" href="#fiscal" title="Permanent link">&para;</a></h3>
 <p>• 12310 – COO<br />
 • 58 – Perfil 6 (NFC-e)<br />
 • 12666</p>
-<h3 id="finalizacao">🔄 Finalização</h3>
+<h3 id="finalizacao">🔄 Finalização<a class="headerlink" href="#finalizacao" title="Permanent link">&para;</a></h3>
 <p>• 854 – Puxar carga</p>
 <hr />
-<h2 id="testes">🧪 TESTES</h2>
+<h2 id="testes">🧪 TESTES<a class="headerlink" href="#testes" title="Permanent link">&para;</a></h2>
 <p>• 136 – Scanner<br />
 • 201 / 75 – Impressora<br />
 • 6777 – Balança<br />
@@ -1519,7 +1525,7 @@ wget --user pdvtec --password=&quot;I37#P84G0qx@&quot; -c ftp://ftp.zanthus.com.
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>

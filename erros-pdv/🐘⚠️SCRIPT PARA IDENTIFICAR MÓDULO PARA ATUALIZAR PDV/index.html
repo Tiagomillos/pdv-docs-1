@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentação do sistema PDV">
       
+      
+        <meta name="author" content="Tiago Millos">
+      
+      
+        <link rel="canonical" href="https://tiagomillos.github.io/pdv-docs/erros-pdv/%F0%9F%90%98%E2%9A%A0%EF%B8%8FSCRIPT%20PARA%20IDENTIFICAR%20M%C3%93DULO%20PARA%20ATUALIZAR%20PDV/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.2.5">
@@ -53,7 +59,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber">
   
     
     
@@ -109,7 +115,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
           
         
       </form>
@@ -171,7 +177,7 @@
 
   <li class="md-tabs__item">
     <a href="../.." class="md-tabs__link">
-      Welcome to MkDocs
+      📚 Documentação PDV
     </a>
   </li>
 
@@ -235,7 +241,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Welcome to MkDocs
+        📚 Documentação PDV
       </a>
     </li>
   
@@ -999,10 +1005,10 @@
                 
 
 
-<h3 id="objetivo">📌 Objetivo</h3>
+<h3 id="objetivo">📌 Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h3>
 <p>Este script serve para <strong>identificar automaticamente a versão do PHP instalada no PDV</strong> e <strong>baixar a versão correta do módulo PHP</strong>, garantindo que o sistema funcione após a atualização.</p>
 <hr />
-<h2 id="importante">⚠️ Importante</h2>
+<h2 id="importante">⚠️ Importante<a class="headerlink" href="#importante" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>✅ <strong>Todo o script deve ser executado diretamente no PDV (terminal do servidor PDV).</strong><br />
 ❌ Não execute apenas partes do código<br />
@@ -1010,12 +1016,12 @@
 </blockquote>
 <p>👉 O processo depende do ambiente local (PHP instalado, diretórios e permissões).</p>
 <hr />
-<h2 id="execucao-do-script">▶️ Execução do Script</h2>
-<h3 id="1-acesse-o-terminal-do-pdv">1. Acesse o terminal do PDV</h3>
+<h2 id="execucao-do-script">▶️ Execução do Script<a class="headerlink" href="#execucao-do-script" title="Permanent link">&para;</a></h2>
+<h3 id="1-acesse-o-terminal-do-pdv">1. Acesse o terminal do PDV<a class="headerlink" href="#1-acesse-o-terminal-do-pdv" title="Permanent link">&para;</a></h3>
 <p>Conecte-se ao servidor onde o PDV está instalado.</p>
 <hr />
-<h3 id="2-cole-e-execute-o-script-completo">2. Cole e execute o script completo</h3>
-<h1 id="binbash">!/bin/bash</h1>
+<h3 id="2-cole-e-execute-o-script-completo">2. Cole e execute o script completo<a class="headerlink" href="#2-cole-e-execute-o-script-completo" title="Permanent link">&para;</a></h3>
+<h1 id="binbash">!/bin/bash<a class="headerlink" href="#binbash" title="Permanent link">&para;</a></h1>
 <p>DIRETORIO_ALVO="/Zanthus/Zeus/pdvJava/GERAL/SINCRO/WEB/moduloPHPPDV/"
 USER_FTP="pdvtec"
 PASS_FTP="I37#P84G0qx@"</p>
@@ -1046,14 +1052,14 @@ fi</p>
 <p>echo "Extraindo arquivos..."
 unzip -o "$ARQUIVO"</p>
 <p>echo "=== Atualização concluída com sucesso ==="</p>
-<h2 id="resultado-esperado">✅ Resultado Esperado</h2>
+<h2 id="resultado-esperado">✅ Resultado Esperado<a class="headerlink" href="#resultado-esperado" title="Permanent link">&para;</a></h2>
 <ul>
 <li>O script identifica automaticamente o ambiente do PDV</li>
 <li>Baixa o módulo correto</li>
 <li>Atualiza os arquivos automaticamente</li>
 </ul>
 <hr />
-<h2 id="dica">💡 Dica</h2>
+<h2 id="dica">💡 Dica<a class="headerlink" href="#dica" title="Permanent link">&para;</a></h2>
 <p>Se quiser deixar mais seguro, você pode rodar antes:</p>
 <p>cp -r moduloPHPPDV moduloPHPPDV_backup</p>
 <p>👉 Isso cria um backup antes da atualização.</p>
@@ -1122,7 +1128,7 @@ unzip -o "$ARQUIVO"</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>

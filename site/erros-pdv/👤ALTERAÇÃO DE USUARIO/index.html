@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentação do sistema PDV">
       
+      
+        <meta name="author" content="Tiago Millos">
+      
+      
+        <link rel="canonical" href="https://tiagomillos.github.io/pdv-docs/erros-pdv/%F0%9F%91%A4ALTERA%C3%87%C3%83O%20DE%20USUARIO/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.2.5">
@@ -53,7 +59,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber">
   
     
     
@@ -109,7 +115,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
           
         
       </form>
@@ -171,7 +177,7 @@
 
   <li class="md-tabs__item">
     <a href="../.." class="md-tabs__link">
-      Welcome to MkDocs
+      📚 Documentação PDV
     </a>
   </li>
 
@@ -235,7 +241,7 @@
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Welcome to MkDocs
+        📚 Documentação PDV
       </a>
     </li>
   
@@ -975,33 +981,33 @@
 
   <h1>👤ALTERAÇÃO DE USUARIO</h1>
 
-<h2 id="usuarios-senhas-e-comandos-pdv">👤 Usuários, Senhas e Comandos – PDV</h2>
+<h2 id="usuarios-senhas-e-comandos-pdv">👤 Usuários, Senhas e Comandos – PDV<a class="headerlink" href="#usuarios-senhas-e-comandos-pdv" title="Permanent link">&para;</a></h2>
 <hr />
-<h2 id="informacoes">🔐 Informações</h2>
+<h2 id="informacoes">🔐 Informações<a class="headerlink" href="#informacoes" title="Permanent link">&para;</a></h2>
 <p>⚠️ <strong>Uso interno / técnico</strong></p>
 <p>• <strong>zanthus</strong> = <code>upvJ;&lt;]=77o2</code><br />
 • <strong>pdvtec</strong> = <code>ZN6jyI84L</code><br />
 • <strong>sustentacao</strong> = <code>1GW5RrQgv</code><br />
 • <strong>VNC</strong> = <code>0rltVP75z</code></p>
 <hr />
-<h2 id="comandos-de-criacao-e-configuracao-de-usuarios">💻 Comandos de criação e configuração de usuários</h2>
-<h3 id="criar-usuario-pdvtec">🔹 Criar usuário <code>pdvtec</code></h3>
-<pre><code class="language-bash">sudo useradd -m -s /bin/bash pdvtec
-sudo usermod -aG sudo pdvtec
-sudo passwd pdvtec
-</code></pre>
-<h3 id="criar-usuario-sustentacao">🔹 Criar usuário <code>sustentacao</code></h3>
-<pre><code class="language-bash">sudo useradd -m -s /bin/bash sustentacao
-sudo usermod -aG sudo sustentacao
-sudo passwd sustentacao
-</code></pre>
-<h3 id="alterar-senha-do-usuario-zanthus">🔹 Alterar senha do usuário <code>zanthus</code></h3>
-<pre><code class="language-bash">sudo passwd zanthus
-</code></pre>
+<h2 id="comandos-de-criacao-e-configuracao-de-usuarios">💻 Comandos de criação e configuração de usuários<a class="headerlink" href="#comandos-de-criacao-e-configuracao-de-usuarios" title="Permanent link">&para;</a></h2>
+<h3 id="criar-usuario-pdvtec">🔹 Criar usuário <code>pdvtec</code><a class="headerlink" href="#criar-usuario-pdvtec" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>pdvtec
+sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>pdvtec
+sudo<span class="w"> </span>passwd<span class="w"> </span>pdvtec
+</code></pre></div>
+<h3 id="criar-usuario-sustentacao">🔹 Criar usuário <code>sustentacao</code><a class="headerlink" href="#criar-usuario-sustentacao" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>sustentacao
+sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>sustentacao
+sudo<span class="w"> </span>passwd<span class="w"> </span>sustentacao
+</code></pre></div>
+<h3 id="alterar-senha-do-usuario-zanthus">🔹 Alterar senha do usuário <code>zanthus</code><a class="headerlink" href="#alterar-senha-do-usuario-zanthus" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>passwd<span class="w"> </span>zanthus
+</code></pre></div>
 <hr />
-<h2 id="configuracao-de-senha-vnc">🖥️ Configuração de senha VNC</h2>
-<pre><code class="language-bash">x11vnc -storepasswd /root/.vncpasswd
-</code></pre>
+<h2 id="configuracao-de-senha-vnc">🖥️ Configuração de senha VNC<a class="headerlink" href="#configuracao-de-senha-vnc" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>x11vnc<span class="w"> </span>-storepasswd<span class="w"> </span>/root/.vncpasswd
+</code></pre></div>
 <hr />
 <p>📌 <strong>Observações</strong><br />
 • Garantir que os usuários tenham sido criados corretamente antes de liberar acesso<br />
@@ -1072,7 +1078,7 @@ sudo passwd sustentacao
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>

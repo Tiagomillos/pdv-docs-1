@@ -1,0 +1,25 @@
+site_name: PDV Docs
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: black
+      accent: orange
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - awesome-pages
+extra_css:
+  - stylesheets/extra.css

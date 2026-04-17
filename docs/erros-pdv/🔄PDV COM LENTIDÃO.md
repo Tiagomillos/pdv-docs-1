@@ -1,0 +1,1 @@
+3512 função para tirar do modo 0ffline

@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+# 📚 Documentação PDV
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Bem-vindo à documentação do sistema PDV.
 
-## Commands
+Aqui você encontrará guias, tutoriais e informações importantes para uso e manutenção do sistema.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
+## 🚀 Objetivo
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Este projeto tem como objetivo centralizar informações técnicas e facilitar o suporte e a resolução de problemas.
+
+---
+
+## 🛠️ Tecnologias
+
+- Linux
+- Windows
+- Sistemas PDV
+- Suporte remoto
+
+---
+
+## 📖 Conteúdo
+
+- Instalação do sistema
+- Configurações iniciais
+- Resolução de problemas
+- Atualizações
+
+---

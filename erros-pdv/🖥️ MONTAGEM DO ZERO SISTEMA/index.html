@@ -141,6 +141,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -1329,14 +1331,14 @@
 <hr />
 <h2 id="1-acessar-o-diretorio-principal-do-pdv">🔹 1️⃣ Acessar o diretório principal do PDV<a class="headerlink" href="#1-acessar-o-diretorio-principal-do-pdv" title="Permanent link">&para;</a></h2>
 <p>No novo PDV (destino), abra o terminal e execute:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/pdvJava/
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/pdvJava/
 </code></pre></div>
 <hr />
 <h2 id="2-estrutura-padrao-do-comando-scp">🔹 2️⃣ Estrutura padrão do comando SCP<a class="headerlink" href="#2-estrutura-padrao-do-comando-scp" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>-r<span class="w"> </span>usuario@IP:/caminho/origem/arquivo<span class="w"> </span>destino/
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>scp<span class="w"> </span>-r<span class="w"> </span>usuario@IP:/caminho/origem/arquivo<span class="w"> </span>destino/
 </code></pre></div>
 <p>Exemplo:</p>
-<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>-r<span class="w"> </span>root@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9.CFG<span class="w"> </span>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>scp<span class="w"> </span>-r<span class="w"> </span>root@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9.CFG<span class="w"> </span>.
 </code></pre></div>
 <p>📌 O ponto (<code>.</code>) indica o diretório atual.</p>
 <hr />
@@ -1348,33 +1350,33 @@
 <h2 id="4-copiar-somente-os-arquivos-necessarios-um-por-um">🔹 4️⃣ Copiar somente os arquivos necessários (um por um)<a class="headerlink" href="#4-copiar-somente-os-arquivos-necessarios-um-por-um" title="Permanent link">&para;</a></h2>
 <p>⚠️ <strong>Nunca usar curingas amplos</strong> (ex: <code>ECF9*.CFG</code>), pois pode copiar <code>ECF9F.CFG</code> e quebrar configurações.</p>
 <h3 id="exemplos-corretos">📌 Exemplos corretos<a class="headerlink" href="#exemplos-corretos" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9.CFG<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9A.CFG<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECFRECEB.CFG<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/EMUL.INI<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZIGK.CFG<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CLISITEF.INI<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/simula*<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/RCBCNF*.CFG<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/RESTG*.CFG<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZMWS*.CFG<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZMAN*<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CARG*.CFG<span class="w"> </span>.
-scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CLAZ.CFG<span class="w"> </span>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9.CFG<span class="w"> </span>.
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECF9A.CFG<span class="w"> </span>.
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ECFRECEB.CFG<span class="w"> </span>.
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/EMUL.INI<span class="w"> </span>.
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZIGK.CFG<span class="w"> </span>.
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CLISITEF.INI<span class="w"> </span>.
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/simula*<span class="w"> </span>.
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/RCBCNF*.CFG<span class="w"> </span>.
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/RESTG*.CFG<span class="w"> </span>.
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZMWS*.CFG<span class="w"> </span>.
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/ZMAN*<span class="w"> </span>.
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CARG*.CFG<span class="w"> </span>.
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/CLAZ.CFG<span class="w"> </span>.
 </code></pre></div>
 <hr />
 <h2 id="5-atualizar-codfon-obrigatorio">🔹 5️⃣ ATUALIZAR CODFON (OBRIGATÓRIO)<a class="headerlink" href="#5-atualizar-codfon-obrigatorio" title="Permanent link">&para;</a></h2>
 <p>Após copiar o <strong>ZMAN</strong>, atualizar o CODFON:</p>
-<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-xvzf<span class="w"> </span>ZMAN_ULTIMA_VERSAO.tar.gz
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>tar<span class="w"> </span>-xvzf<span class="w"> </span>ZMAN_ULTIMA_VERSAO.tar.gz
 </code></pre></div>
 <p>📌 Sempre utilizar a <strong>última versão</strong> do ZMAN.</p>
 <hr />
 <h1 id="configuracao-da-interface-pdvgui">🖥️🎨 Configuração da Interface (pdvGUI)<a class="headerlink" href="#configuracao-da-interface-pdvgui" title="Permanent link">&para;</a></h1>
 <h2 id="6-acessar-pasta-pdvgui">🔹 6️⃣ Acessar pasta pdvGUI<a class="headerlink" href="#6-acessar-pasta-pdvgui" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/pdvJava/pdvGUI/
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/pdvJava/pdvGUI/
 </code></pre></div>
 <h2 id="7-copiar-guiconfigproj-do-pdv-antigo">🔹 7️⃣ Copiar guiConfigProj do PDV antigo<a class="headerlink" href="#7-copiar-guiconfigproj-do-pdv-antigo" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/pdvGUI/guiConfigProj<span class="w"> </span>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus/Zeus/pdvJava/pdvGUI/guiConfigProj<span class="w"> </span>.
 </code></pre></div>
 <hr />
 <h2 id="8-configuracao-de-resolucao">🔹 8️⃣ Configuração de resolução<a class="headerlink" href="#8-configuracao-de-resolucao" title="Permanent link">&para;</a></h2>
@@ -1395,30 +1397,30 @@ scp<span class="w"> </span>-r<span class="w"> </span>user@192.168.0.101:/Zanthus
 <p>• Conectar no IP do PDV<br />
 • Colar os arquivos na <strong>home do usuário</strong></p>
 <h3 id="comandos-no-terminal">⚙️ Comandos no terminal<a class="headerlink" href="#comandos-no-terminal" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>*.so
-cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/pdvJava
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>*.so
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/pdvJava
 </code></pre></div>
 <p>Ubuntu 16:</p>
-<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/lib_u64
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/lib_u64
 </code></pre></div>
 <p>Ubuntu 22:</p>
-<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/lib_u22
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>cp<span class="w"> </span>*.so<span class="w"> </span>/Zanthus/Zeus/lib_u22
 </code></pre></div>
 <hr />
 <h2 id="11-atualizar-todas-as-bibliotecas">🔹 11 Atualizar TODAS as bibliotecas<a class="headerlink" href="#11-atualizar-todas-as-bibliotecas" title="Permanent link">&para;</a></h2>
 <h3 id="64-bits">🔸 64 bits<a class="headerlink" href="#64-bits" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u64
-wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_u64/*<span class="w"> </span>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u64
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_u64/*<span class="w"> </span>.
 </code></pre></div>
 <h3 id="32-bits">🔸 32 bits<a class="headerlink" href="#32-bits" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u32
-wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so/*
-wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_ubu/*
-wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_co5/*
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u32
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so/*
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_ubu/*
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_co5/*
 </code></pre></div>
 <h3 id="ubuntu-22">🔸 Ubuntu 22<a class="headerlink" href="#ubuntu-22" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u22
-wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_u22/*
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">cd</span><span class="w"> </span>/Zanthus/Zeus/lib_u22
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w"> </span>--password<span class="o">=</span><span class="s2">&quot;I37#P84G0qx@&quot;</span><span class="w"> </span>-c<span class="w"> </span>ftp://ftp.zanthus.com.br:2142/pub/Zeus_Frente_de_Loja/_Complementares/so_u22/*
 </code></pre></div>
 <hr />
 <h2 id="12-via-manager-obrigatorio">🔹 12 VIA MANAGER (OBRIGATÓRIO)<a class="headerlink" href="#12-via-manager-obrigatorio" title="Permanent link">&para;</a></h2>
@@ -1465,6 +1467,11 @@ wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w">
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
         
       </main>
       
@@ -1525,7 +1532,7 @@ wget<span class="w"> </span>--user<span class="w"> </span>pdvtec<span class="w">
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.instant", "navigation.tracking", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>

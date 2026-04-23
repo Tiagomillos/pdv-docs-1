@@ -1,5 +1,9 @@
-![[Pasted image 20260212085038.png]]
+# 📊 IMPORTAÇÃO DE TABELA IBPT
 
-____________________________________________
+## Passo 1
 
-![[Pasted image 20260212085125.png]]
+![](../imagens/ibtp.jpeg)
+
+## Passo 2
+
+![](../imagens/tabela.jpeg)

@@ -2,7 +2,7 @@
 
 ## 📌 Exemplo do cenário
 
-![[Pasted image 20260416154335.png]]
+![](../imagens/terminal.png)
 
 ---
 

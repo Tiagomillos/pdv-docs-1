@@ -195,4 +195,29 @@
          <lastmod>2026-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://tiagomillos.github.io/pdv-docs/ferramentas/anydesk/</loc>
+         <lastmod>2026-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tiagomillos.github.io/pdv-docs/ferramentas/index2/</loc>
+         <lastmod>2026-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tiagomillos.github.io/pdv-docs/ferramentas/putty/</loc>
+         <lastmod>2026-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tiagomillos.github.io/pdv-docs/ferramentas/realvnc/</loc>
+         <lastmod>2026-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tiagomillos.github.io/pdv-docs/ferramentas/winscp/</loc>
+         <lastmod>2026-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

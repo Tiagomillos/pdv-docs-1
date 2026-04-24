@@ -173,6 +173,8 @@ wget --user pdvtec --password="I37#P84G0qx@" -c ftp://ftp.zanthus.com.br:2142/pu
 
 ---
 
+
+
 ## 🔹 12 VIA MANAGER (OBRIGATÓRIO)
 
 • Acessar o **Manager**  

@@ -1,20 +1,43 @@
 /* =====================================
-   MODO ESCURO CUSTOM
+   PDV DOCS THEME
+===================================== */
+
+html{
+scroll-behavior:smooth;
+}
+
+
+/* =====================================
+   MODO ESCURO
 ===================================== */
 
 [data-md-color-scheme="slate"]{
---md-default-bg-color:#121212;
---md-default-fg-color:#f5f5f5;
+--md-default-bg-color:#121212 !important;
+--md-default-bg-color--light:#1a1a1a !important;
+--md-default-fg-color:#f5f5f5 !important;
 
---md-primary-fg-color:#ff6d00;
---md-primary-fg-color--light:#ff9100;
---md-accent-fg-color:#ffd54f;
+--md-primary-fg-color:#ff6d00 !important;
+--md-primary-fg-color--light:#ff9100 !important;
+--md-accent-fg-color:#ffd54f !important;
 
 --md-code-bg-color:#1e1e1e;
 }
 
+
+/* remove roxo do slate */
+[data-md-color-scheme="slate"] .md-main,
+[data-md-color-scheme="slate"] .md-main__inner,
+[data-md-color-scheme="slate"] .md-content,
+[data-md-color-scheme="slate"] .md-content__inner,
+[data-md-color-scheme="slate"] .md-sidebar,
+[data-md-color-scheme="slate"] .md-sidebar__scrollwrap,
+[data-md-color-scheme="slate"] .md-typeset{
+background:#121212 !important;
+}
+
 [data-md-color-scheme="slate"] .md-typeset h1{
 color:#ff6d00;
+text-shadow:0 0 8px rgba(255,109,0,.3);
 }
 
 [data-md-color-scheme="slate"] .md-typeset h2{
@@ -28,11 +51,11 @@ margin-top:30px;
 color:#ffd54f;
 }
 
-[data-md-color-scheme="slate"] .md-typeset a{
+[data-md-color-scheme="slate"] a{
 color:#ffab40;
 }
 
-[data-md-color-scheme="slate"] .md-typeset a:hover{
+[data-md-color-scheme="slate"] a:hover{
 color:#ffd180;
 }
 
@@ -47,8 +70,9 @@ box-shadow:0 8px 20px rgba(0,0,0,.35);
 }
 
 
+
 /* =====================================
-   MODO CLARO CUSTOM
+   MODO CLARO
 ===================================== */
 
 [data-md-color-scheme="default"]{
@@ -72,41 +96,35 @@ margin-top:30px;
 color:#ff8f00;
 }
 
-[data-md-color-scheme="default"] .md-typeset a{
+[data-md-color-scheme="default"] a{
 color:#ef6c00;
 }
 
-[data-md-color-scheme="default"] .md-typeset a:hover{
+[data-md-color-scheme="default"] a:hover{
 color:#ff9800;
-}
-
-[data-md-color-scheme="default"] .highlight pre{
-border-radius:14px;
-box-shadow:0 4px 10px rgba(0,0,0,.10);
 }
 
 [data-md-color-scheme="default"] img{
 border-radius:14px;
 box-shadow:0 6px 12px rgba(0,0,0,.12);
-margin-top:12px;
-}
-
-[data-md-color-scheme="default"] .md-nav__link--active{
-color:#ef6c00 !important;
-font-weight:700;
 }
 
 
-/* ======================
+
+/* =====================================
    ELEMENTOS GERAIS
-====================== */
+===================================== */
+
+.highlight pre{
+border-radius:14px;
+}
 
 .md-typeset .admonition{
 border-radius:14px;
 }
 
 .md-header{
-box-shadow:0 4px 12px rgba(0,0,0,.20);
+box-shadow:0 4px 12px rgba(0,0,0,.2);
 }
 
 .md-typeset table{
@@ -129,5 +147,4 @@ transition:.3s;
 
 .github-btn:hover{
 transform:translateY(-2px);
-box-shadow:0 6px 16px rgba(0,0,0,.4);
 }

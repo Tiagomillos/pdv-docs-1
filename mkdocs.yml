@@ -12,16 +12,15 @@ theme:
     primary: deep orange
     accent: amber
     toggle:
-      icon: material/weather-sunny
+      icon: material/brightness-7
       name: Alternar para modo claro
 
   - scheme: default
     primary: deep orange
     accent: amber
     toggle:
-      icon: material/weather-night
+      icon: material/brightness-4
       name: Alternar para modo escuro
-
 
 
     font:

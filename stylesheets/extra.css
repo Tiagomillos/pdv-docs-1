@@ -1,4 +1,66 @@
 /* =====================================
+   MODO ESCURO CUSTOM
+===================================== */
+
+[data-md-color-scheme="slate"]{
+--md-default-bg-color:#121212;
+--md-default-fg-color:#f5f5f5;
+
+--md-primary-fg-color:#ff6d00;
+--md-primary-fg-color--light:#ff9100;
+--md-accent-fg-color:#ffd54f;
+
+--md-code-bg-color:#1e1e1e;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1{
+color:#ff6d00;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2{
+color:#ff9100;
+border-left:4px solid #ff6d00;
+padding-left:12px;
+margin-top:30px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3{
+color:#ffd54f;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a{
+color:#ffab40;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover{
+color:#ffd180;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active{
+color:#ffb74d !important;
+font-weight:700;
+}
+
+[data-md-color-scheme="slate"] img{
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+
+/* =====================================
+   MODO CLARO CUSTOM
+===================================== */
+
+[data-md-color-scheme="default"]{
+--md-primary-fg-color:#ff6d00;
+--md-primary-fg-color--light:#ff9100;
+--md-accent-fg-color:#ffd54f;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1{
+color:#e65100;
+}
+
 [data-md-color-scheme="default"] .md-typeset h2{
 color:#ef6c00;
 border-left:4px solid #fb8c00;

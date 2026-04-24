@@ -1,4 +1,4 @@
-# PDV sem subir venda
+# 🔄PDV sem subir venda
 
 ## Verificação de Licença
 

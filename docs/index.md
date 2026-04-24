@@ -63,3 +63,9 @@ Este projeto tem como objetivo centralizar informações técnicas e facilitar o
 <div align="center">
 <img src="imagens/tabela.jpeg" width="80%">
 </div>
+
+---
+
+## 🔗 Autor
+
+Desenvolvido por **[Tiago Millos](https://github.com/Tiagomillos)**.

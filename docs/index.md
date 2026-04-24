@@ -66,6 +66,13 @@ Este projeto tem como objetivo centralizar informações técnicas e facilitar o
 
 ---
 
-## 🔗 Autor
 
-Desenvolvido por **[Tiago Millos](https://github.com/Tiagomillos)**.
+<div align="center">
+
+<h3>👨‍💻 Site criado por</h3>
+
+<a href="https://github.com/Tiagomillos" target="_blank">
+Tiago Millos
+</a>
+
+</div>

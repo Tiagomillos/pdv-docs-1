@@ -1,82 +1,71 @@
-/* =========================
-   IDENTIDADE VISUAL PDV DOCS
-========================= */
-
-/* Fundo geral */
-body{
-  background-color:#121212;
+/* =====================================
+[data-md-color-scheme="default"] .md-typeset h2{
+color:#ef6c00;
+border-left:4px solid #fb8c00;
+padding-left:12px;
+margin-top:30px;
 }
 
-/* Títulos */
-.md-typeset h1{
-  color:#ff6d00;
-  font-weight:700;
-  text-shadow:0 0 8px rgba(255,109,0,.3);
+[data-md-color-scheme="default"] .md-typeset h3{
+color:#ff8f00;
 }
 
-.md-typeset h2{
-  color:#ff9100;
-  border-left:4px solid #ff6d00;
-  padding-left:12px;
-  margin-top:30px;
+[data-md-color-scheme="default"] .md-typeset a{
+color:#ef6c00;
 }
 
-.md-typeset h3{
-  color:#ffd54f;
+[data-md-color-scheme="default"] .md-typeset a:hover{
+color:#ff9800;
 }
 
-/* Links */
-.md-typeset a{
-  color:#ffab40;
-  transition:.3s;
+[data-md-color-scheme="default"] .highlight pre{
+border-radius:14px;
+box-shadow:0 4px 10px rgba(0,0,0,.10);
 }
 
-.md-typeset a:hover{
-  color:#ffd180;
+[data-md-color-scheme="default"] img{
+border-radius:14px;
+box-shadow:0 6px 12px rgba(0,0,0,.12);
+margin-top:12px;
 }
 
-/* Código */
-.highlight pre{
-  border-radius:14px;
-  box-shadow:0 6px 16px rgba(0,0,0,.35);
+[data-md-color-scheme="default"] .md-nav__link--active{
+color:#ef6c00 !important;
+font-weight:700;
 }
 
-/* Código inline */
-code{
-  border-radius:6px;
-  padding:2px 6px;
-}
 
-/* Imagens */
-img{
-  border-radius:14px;
-  box-shadow:0 8px 20px rgba(0,0,0,.35);
-  margin-top:12px;
-}
+/* ======================
+   ELEMENTOS GERAIS
+====================== */
 
-/* Cards de aviso */
 .md-typeset .admonition{
-  border-radius:14px;
+border-radius:14px;
 }
 
-/* Menu lateral */
-.md-nav__link--active{
-  color:#ffb74d !important;
-  font-weight:700;
-}
-
-/* Barra superior */
 .md-header{
-  box-shadow:0 4px 12px rgba(0,0,0,.25);
+box-shadow:0 4px 12px rgba(0,0,0,.20);
 }
 
-/* Tabelas */
 .md-typeset table{
-  border-radius:12px;
-  overflow:hidden;
+border-radius:12px;
+overflow:hidden;
 }
 
-/* Scroll suave */
-html{
-  scroll-behavior:smooth;
+.github-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 22px;
+background:linear-gradient(45deg,#ff6d00,#ff9100);
+color:white !important;
+text-decoration:none;
+font-weight:700;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+.github-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 16px rgba(0,0,0,.4);
 }

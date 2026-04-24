@@ -7,11 +7,24 @@ theme:
   name: material
 
   palette:
-    - scheme: slate
-      primary: deep orange
-      accent: amber
 
-  font:
+  - scheme: slate
+    primary: deep orange
+    accent: amber
+    toggle:
+      icon: material/weather-sunny
+      name: Alternar para modo claro
+
+  - scheme: default
+    primary: deep orange
+    accent: amber
+    toggle:
+      icon: material/weather-night
+      name: Alternar para modo escuro
+
+
+
+    font:
     text: Roboto
     code: Roboto Mono
 

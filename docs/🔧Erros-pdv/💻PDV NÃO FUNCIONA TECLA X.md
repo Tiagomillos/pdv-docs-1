@@ -49,4 +49,4 @@ Depois localize e ajuste a **linha e coluna da tecla** conforme identificado no 
 
 ## 📷 Referência
 
-![[Pasted image 20260312134848.png]]
+![[Paste20260313093729.img]]

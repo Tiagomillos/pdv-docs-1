@@ -31,11 +31,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tiagomillos.github.io/pdv-docs/%F0%9F%94%A7Erros-pdv/ATUALIZAR-JAVA/</loc>
-         <lastmod>2026-04-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://tiagomillos.github.io/pdv-docs/%F0%9F%94%A7Erros-pdv/%E2%9A%99%EF%B8%8FHABILITAR%20BALAN%C3%87A%20NO%20PDV/</loc>
          <lastmod>2026-04-30</lastmod>
          <changefreq>daily</changefreq>
@@ -142,6 +137,16 @@
     </url>
     <url>
          <loc>https://tiagomillos.github.io/pdv-docs/%F0%9F%94%A7Erros-pdv/%F0%9F%92%BBPDV%20N%C3%83O%20FUNCIONA%20TECLA%20X/</loc>
+         <lastmod>2026-04-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tiagomillos.github.io/pdv-docs/%F0%9F%94%A7Erros-pdv/%F0%9F%93%81ATUALIZAR-JAVA/</loc>
+         <lastmod>2026-04-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tiagomillos.github.io/pdv-docs/%F0%9F%94%A7Erros-pdv/%F0%9F%93%82IMPRESSORA%20USB%20ENGIN/</loc>
          <lastmod>2026-04-30</lastmod>
          <changefreq>daily</changefreq>
     </url>

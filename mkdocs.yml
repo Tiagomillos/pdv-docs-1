@@ -9,8 +9,8 @@ theme:
   palette:
 
   - scheme: slate
-    primary: deep orange
-    accent: amber
+    primary: deep purple
+    accent: cyan
     toggle:
       icon: material/brightness-7
       name: Alternar para modo claro

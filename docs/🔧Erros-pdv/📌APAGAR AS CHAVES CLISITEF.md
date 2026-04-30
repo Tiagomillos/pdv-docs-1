@@ -1,10 +1,5 @@
 # 🧾 Resolução de Chamado — TEF / TLS
 
-## 📌 Exemplo do cenário
-
-![](../imagens/terminal.png)
-
----
 
 ## 🔧 Procedimento
 

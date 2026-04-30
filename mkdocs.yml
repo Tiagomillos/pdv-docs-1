@@ -7,25 +7,23 @@ theme:
   name: material
 
   palette:
+    - scheme: slate
+      primary: black
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Alternar para modo claro
 
-  - scheme: slate
-    primary: deep purple
-    accent: cyan
-    toggle:
-      icon: material/brightness-7
-      name: Alternar para modo claro
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Alternar para modo escuro
 
-  - scheme: default
-    primary: deep orange
-    accent: amber
-    toggle:
-      icon: material/brightness-4
-      name: Alternar para modo escuro
-
-
-    font:
-    text: Roboto
-    code: Roboto Mono
+  font:
+    text: JetBrains Mono
+    code: JetBrains Mono
 
   features:
     - navigation.tabs
@@ -61,10 +59,6 @@ markdown_extensions:
       alternate_style: true
 
   - pymdownx.details
-
-#  - pymdownx.emoji:
-#      emoji_index: !!python/name:material.extensions.emoji.twemoji
-#      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - stylesheets/extra.css
